@@ -33,6 +33,11 @@ This project is distributed with [MIT](/LICENSE) license
 
 ## Learn Snug
 
+- [Defining a Key](https://gitlab.com/aiocat/snug#defining-a-key)
+- [Types](https://gitlab.com/aiocat/snug#types)
+- [Objects](https://gitlab.com/aiocat/snug#objects)
+- [Arrays](https://gitlab.com/aiocat/snug#arrays)
+
 ### Defining a Key
 
 Snug has really easy way to declare a new key. Check the syntax below:
@@ -54,7 +59,7 @@ Say goodbye to indentation syntax, semicolons and if you want to write worst syn
 - `bool`: The boolean data type represents only one bit of information either yes or no.
   - **Example(s)**: `yes`, `no`
 - `int`: The int (integer) data type represents number.
-  - **Example(s)**: `420`, `1337`, `1_000_000` (1,000,000), `1_0_00_____0` (1,000)
+  - **Example(s)**: `420`, `1337`, `1_000_000` (1,000,000), `1_0_00_____0` (10,000)
 - `float`: The float data type represents decimal real number.
   - **Example(s)**: `42.111`, `835.2`, `.62`, `1.`
 - `string`: The string data type represents char set.
@@ -63,3 +68,43 @@ Say goodbye to indentation syntax, semicolons and if you want to write worst syn
   - **Example(s)**: `[1 2 3 4]`, `[1 "Another Type" .3 yes]`
 - `nil`: The nil (null, none) data type is used to define null value.
   - **Example(s)**: `nil`
+
+### Objects
+
+Actually, objects can resemble **Common Lisp** to you. Check the syntax below:
+
+```snug
+(<object-name> # ... # )
+```
+
+Object literals contains key/value pairs. Value must be valid snug type. An example:
+
+```snug
+users [
+    (john id 0 age 21) # First object #
+    (aiocat id 1 age 16) # Second object #
+    (bob id 2 age 19) # Last object #
+]
+```
+
+### Arrays
+
+_The array data type is used to define multiple variables of the same or different type._
+
+Array syntax for snug is:
+
+```snug
+<key> [<value 1> <value 2> # ... #]
+```
+
+Array elements are seperated with spaces. Check the example below:
+
+```snug
+favorite-numbers [2 4 13 42]
+```
+
+... and you can use different types in same array:
+
+```snug
+collected-datas ["Hello" 1 4.3 258_23 yes nil]
+```
