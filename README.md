@@ -80,10 +80,24 @@ Actually, objects can resemble **Common Lisp** to you. Check the syntax below:
 Object literals contains key/value pairs. Value must be valid snug type. An example:
 
 ```snug
+(info title "Hello World" views 5921 tags ["C++" "Programming"])
+```
+
+#### Anonymous Objects
+
+Anonymous objects are mostly used for adding object to the array.
+
+```snug
+(? # ... #)
+```
+
+Check the example below:
+
+```snug
 users [
-    (john id 0 age 21) # First object #
-    (aiocat id 1 age 16) # Second object #
-    (bob id 2 age 19) # Last object #
+    (? name "bob" id 0 age 21) # First anonymous object #
+    (? name "aiocat" id 1 age 16) # Second anonymous object #
+    (? name "john" id 2 age 19) # Last anonymous object #
 ]
 ```
 
