@@ -33,10 +33,15 @@ This project is distributed with [MIT](/LICENSE) license
 
 ## Learn Snug
 
+- [Libraries](https://gitlab.com/aiocat/snug#libraries)
 - [Defining a Key](https://gitlab.com/aiocat/snug#defining-a-key)
 - [Types](https://gitlab.com/aiocat/snug#types)
 - [Objects](https://gitlab.com/aiocat/snug#objects)
 - [Arrays](https://gitlab.com/aiocat/snug#arrays)
+
+### Libraries
+
+- [**JavaScript**: snug.js](https://gitlab.com/snuglibs/snug.js)
 
 ### Defining a Key
 
