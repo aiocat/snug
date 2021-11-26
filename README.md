@@ -42,6 +42,7 @@ This project is distributed with [MIT](/LICENSE) license
 ### Libraries
 
 - [**JavaScript**: snug.js](https://gitlab.com/snuglibs/snug.js)
+- [**Python3**: snugthon](https://gitlab.com/snuglibs/snugthon)
 
 ### Defining a Key
 
